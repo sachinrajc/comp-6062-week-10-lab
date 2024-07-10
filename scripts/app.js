@@ -5,7 +5,6 @@ const app = Vue.createApp({
             LastName: '',
             quantity: 0,
             pricePerItem: 10,
-            myCounter: 10
         };
     },
     computed: {
