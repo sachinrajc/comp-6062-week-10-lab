@@ -21,26 +21,6 @@ const app = Vue.createApp({
             this.lastName = '';
             this.quantity = 0;
         },
-        increase() {
-            setTimeout(() => {
-                this.myCounter++;
-                if (this.myCounter === 10) {
-                    this.decrease();
-                } else {
-                    this.increase();
-                }
-            }, 500);
-        },
-        decrease() {
-            setTimeout(() => {
-                this.myCounter--;
-                if (this.myCounter !== 0) {
-                    this.decrease();
-                } else {
-                    this.increase();
-                }
-            }, 500);
-        }
     }
 });
 

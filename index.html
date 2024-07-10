@@ -10,8 +10,8 @@
 
         <p> Full Name: {{ fullName }}</p>
         <input type="number" v-model="quantity" min="0">  
-        <p>Price per Item: ${{ pricePerItem }}</p>
-        <p>Total Price: ${{ totalPrice }}</p>
+        <p>Price per Item: {{ pricePerItem }}</p>
+        <p>Total Price: {{ totalPrice }}</p>
 
         <button @click="clearFields">Clear Fields</button>
     </div>
