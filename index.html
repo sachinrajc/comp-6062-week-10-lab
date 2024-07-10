@@ -5,17 +5,14 @@
 <body>
     <div id="app">
         <h1>Week 10 Lab</h1>
-        <input type="text" v-model="FirstName" placeholder="First Name">
-        <input type="text" v-model="LastName" placeholder="Last Name">
+        <input type="text" v-model="firstName" placeholder="First Name">
+        <input type="text" v-model="lastName" placeholder="Last Name">
 
-        <p> Name: {{ fullName }}</p>
-        <input type="number" v-model="quantity" min="0">
-        
-        <!-- Paragraphs to Display Price per Item and Total Price -->
+        <p> Full Name: {{ fullName }}</p>
+        <input type="number" v-model="quantity" min="0">  
         <p>Price per Item: ${{ pricePerItem }}</p>
         <p>Total Price: ${{ totalPrice }}</p>
-        
-        <!-- Button to Clear Input Fields -->
+
         <button @click="clearFields">Clear Fields</button>
     </div>
     <script src="https://unpkg.com/vue@3.4.31/dist/vue.global.js"></script>

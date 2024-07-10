@@ -1,15 +1,15 @@
 const app = Vue.createApp({
     data() {
         return {
-            FirstName: '',
-            LastName: '',
+            firstName: '',
+            lastName: '',
             quantity: 0,
-            pricePerItem: 10,
+            pricePerItem: 10
         };
     },
     computed: {
         fullName() {
-            return `${this.FirstName} ${this.LastName}`;
+            return this.firstName + ' ' +this.lastName;
         },
         totalPrice() {
             return this.quantity * this.pricePerItem;
@@ -17,8 +17,8 @@ const app = Vue.createApp({
     },
     methods: {
         clearFields() {
-            this.FirstName = '';
-            this.LastName = '';
+            this.firstName = '';
+            this.lastName = '';
             this.quantity = 0;
         },
         increase() {
